@@ -166,7 +166,7 @@ const ProductScreen = ({ history, match }) => {
                     <Form onSubmit={submitHandler}>
                       <Form.Group controlId='rating'>
                         <Form.Label>Rating</Form.Label>
-                        <Form.Select
+                        <Form.Control
                           as='select'
                           value={rating}
                           onchange={(e) => setRating(e.target.value)}
@@ -177,7 +177,7 @@ const ProductScreen = ({ history, match }) => {
                           <option value='3'>3 - Good</option>
                           <option value='4'>4 - VeryGood</option>
                           <option value='5'>5 - Excellent</option>
-                        </Form.Select>
+                        </Form.Control>
                       </Form.Group>
                       <Form.Group controlId='comment'>
                         <Form.Label>Comment</Form.Label>
